@@ -1,0 +1,14 @@
+package com.sathya.lab;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ForEach8 {
+	public static void main(String[] args) {
+		List<String> names=Arrays.asList("Ratan","kannababu","Yakub","Chimtu");
+		names.forEach(System.out::println);
+		
+	}
+
+}

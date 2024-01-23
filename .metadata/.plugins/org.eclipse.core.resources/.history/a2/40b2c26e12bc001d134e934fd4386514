@@ -1,0 +1,13 @@
+package java8YoutubeEx;
+
+import java.util.List;
+
+public class Java8Youtube {
+public static void main(String[] args) {
+	List<String> names= List.of("raju","rani","ravi","krishna","devi","king","queen");
+	
+	names.stream()
+	.filter(name->name.startsWith("r"))
+	.forEach(name->System.out.println(name));
+}
+}

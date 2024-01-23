@@ -1,0 +1,14 @@
+package com.sathya.coll;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class CollectionsEx {
+public static void main(String[] args) {
+	List<Emp> emps=Arrays.asList(new Emp(11,"kannababu",10000.90,10,"Hyderabad"),
+			new Emp(12,"ratan",20000.90,20,"Banglore"),
+			new Emp(13,"Ranjith",30000.90,10,"Chennai"),
+			new Emp(14,"Naresh",40000.90,10,"Warangal"));
+			
+}
+}

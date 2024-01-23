@@ -1,0 +1,20 @@
+package com.sathya.coll;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+
+public class Empex {
+public static void main(String[] args) {
+	List<Emp> emps=Arrays.asList(
+			new Emp(11,"Kannababu",10000.90,10,"Hyderabad"),
+			new Emp(12,"Ratan",20000.90,20,"Banglore"),
+			new Emp(13,"Ranjith",30000.90,10,"Chennai"),
+			new Emp(14,"Naresh",40000.90,10,"Warangal"),
+			new Emp(15,"Yakoob",50000.90,30,"Karimnagar"));
+	
+	emps.forEach(System.out::println);
+	
+}
+}

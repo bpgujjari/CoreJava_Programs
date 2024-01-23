@@ -1,0 +1,24 @@
+package com.sathya.hashmap;
+
+import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class HashMapEx {
+	 
+	public static void main(String[] args) throws InterruptedException {
+		HashMap<Integer, String> hashmap=new HashMap<>();
+		hashmap.put(22, "aaa");
+		hashmap.put(33, "bbb");
+		hashmap.put(44, "ccc");
+		HashMapEx hm=new HashMapEx();
+		 
+		for(Object i:hashmap.entrySet())
+		{
+			Object s=i;
+			System.out.println(s);
+			Thread.sleep(2000);
+		}
+		System.out.println(hashmap);
+	}
+	
+}

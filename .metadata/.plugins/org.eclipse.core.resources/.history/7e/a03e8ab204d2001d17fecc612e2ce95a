@@ -1,0 +1,55 @@
+package com.sathya.lab;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+
+public class ForEach8 {
+	public static void main(String[] args) {
+		List<String> names=Arrays.asList("Ratan","kannababu","Yakub","Chimtu");
+		names.forEach(System.out::println);
+		System.out.println("***************************");
+		List<String>fruits=Arrays.asList("apple","banana","mango","watermelon");
+		for(String fruit:fruits)
+		{
+			System.out.println(fruit);
+		}
+		System.out.println("***************************");
+
+		
+		List<Integer> numbers=Arrays.asList(2,3,5,7,11);
+		 long count=numbers.stream().count();
+		 System.out.println(count);
+			System.out.println("***************************");
+	 
+		int first= numbers.stream()
+		 .findFirst()
+		 .get();
+		System.out.println(first);
+		
+		
+		System.out.println("***************************");
+	
+		int last=numbers.stream()
+				.sorted((s1,s2)->-s1.compareTo(s2))
+				.findFirst()
+				.get();
+		        System.out.println(last);
+		
+				System.out.println("***************************");
+
+		int third=numbers.stream()
+		.skip(2)
+		.findFirst()
+		.get();
+		System.out.println(third);
+		
+		
+		
+		
+		
+	}
+
+}

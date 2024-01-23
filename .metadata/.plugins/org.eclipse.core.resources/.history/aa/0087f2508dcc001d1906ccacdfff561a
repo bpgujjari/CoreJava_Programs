@@ -1,0 +1,29 @@
+package com.sathya.coll;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+
+public class Empex {
+public static void main(String[] args) {
+	List<Emp> emps=Arrays.asList(new Emp(11,"kannababu",10000.90,10,"Hyderabad"),
+			new Emp(12,"ratan",20000.90,20,"Banglore"),
+			new Emp(13,"Ranjith",30000.90,10,"Chennai"),
+			new Emp(14,"Naresh",40000.90,10,"Warangal"));
+	Scanner sc=new Scanner(System.in);
+	ListIterator<Emp> itr=emps.listIterator();
+	while(itr.hasNext())
+	{
+		System.out.println("Enter your id");
+		int id=sc.nextInt();
+		Emp e=itr.next();
+		if(e.eid==id)
+			System.out.println(e.eid+" "+e.ename);
+		System.out.println("Do you want one more record...yes/no");
+		String option=sc.next();
+		if(option.equals("no"))
+			break;
+	}	
+}
+}

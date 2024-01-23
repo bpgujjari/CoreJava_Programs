@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;MapEs&apos; to &apos;MapEx&apos;&#x0D;&#x0A;- Original project: &apos;Java8Features&apos;&#x0D;&#x0A;- Original element: &apos;MapEs&apos;&#x0D;&#x0A;- Renamed element: &apos;MapEx&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MapEs&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{MapEs.java[MapEs" matchStrategy="1" name="MapEx" qualified="false" references="true" similarDeclarations="false" stamp="1677258021011" textual="false" version="1.0"/>
+</session>
